@@ -7,7 +7,8 @@
 }
 .container-layout {
 	display: grid;
-	grid-template-columns: clamp(250px, 25%, 80%) 1fr;
+	grid-template-columns: clamp(250px, 25%, 80%) 4fr;
+	grid-template-rows: auto 1fr;
 }
 
 /* DASHBOARD AND SIDEBAR */
@@ -25,11 +26,11 @@
 	cursor: pointer;
 	color: white;
 	margin-right: 10px;
+	margin-top: 5px;
 }
 
 .dashboard-icon {
 	margin-top: 5px;
-	margin-left: 8px;
 }
 
 .dashboard {
@@ -62,6 +63,7 @@ ul {
 .sidebar {
 	background-color: #38bdf8;
 	display: grid;
+	grid-row: 1 / span 3;
 
 	padding: 18px;
 	height: 100vh;
@@ -72,8 +74,9 @@ ul {
 	margin-left: 40px;
 	margin-top: 20px;
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 3fr 1fr;
 	align-items: baseline;
+	margin-bottom: 10px;
 }
 
 .profile-picture-main > img {
@@ -97,14 +100,14 @@ ul {
 	border-radius: 10px;
 	height: 30px;
 
-	width: clamp(200px, 100%, 1000px);
+	width: clamp(200px, 100%, 1500px);
 }
 
 .greeting {
 	display: flex;
 	align-items: center;
 	gap: 20px;
-	margin-top: 50px;
+	margin-top: 15px;
 }
 
 .greeting-name {
@@ -164,4 +167,18 @@ ul {
 	display: grid;
 	justify-items: center;
 	margin-right: 50px;
+}
+
+/* PROJECTS CARDS */
+.main-container {
+	height: 100%;
+	background-color: #e5e7eb;
+
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+		rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	padding-top: 50px;
+	padding-left: 40px;
+}
+.projects-title {
+	font-size: 1.7rem;
 }

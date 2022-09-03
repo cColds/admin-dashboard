@@ -308,9 +308,9 @@ main {
 	gap: 20px;
 	background-color: white;
 	border-radius: 20px;
-	padding: 50px;
+	padding: 15px 30px 30px 30px;
 	margin-right: 200px;
-	padding-top: 70px;
+
 	font-weight: bold;
 	font-size: 1.3rem;
 
@@ -327,4 +327,48 @@ main {
 #learnMore {
 	color: #60a5fa;
 	cursor: pointer;
+}
+
+/* TRENDING */
+.trending-container {
+	margin-top: 20px;
+	margin-right: 20px;
+}
+.trending-title {
+	font-size: 1.6rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.trending-card {
+	display: grid;
+	gap: 20px;
+	background-color: white;
+	border-radius: 20px;
+	padding: 15px 30px 30px 30px;
+	justify-content: start;
+	font-weight: bold;
+	font-size: 1.3rem;
+	width: clamp(100px, 100%, 600px);
+}
+
+.container1,
+.container2,
+.container3,
+.container4 {
+	display: grid;
+	grid-template-columns: 0.5fr 1fr;
+}
+
+.image1 > img,
+.image2 > img,
+.image3 > img,
+.image4 > img {
+	border-radius: 50%;
+	min-height: 50px;
+	min-width: 50px;
+}
+
+.info {
+	color: grey;
+	font-size: 1rem;
 }

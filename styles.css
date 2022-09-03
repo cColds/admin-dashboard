@@ -57,7 +57,7 @@ ul {
 	grid-row: 1 / span 3;
 
 	padding: 18px;
-	height: 100vh;
+	height: 100%;
 }
 
 /* HEADER */
@@ -166,10 +166,8 @@ header {
 
 /* PROJECTS CARDS */
 .main-container {
-	height: 100%;
 	background-color: #e5e7eb;
 
-	padding-top: 50px;
 	padding-left: 25px;
 }
 
@@ -187,16 +185,16 @@ header {
 
 .projects-title {
 	font-size: 1.7rem;
-	margin-bottom: 40px;
+	margin-bottom: 15px;
+	padding-left: 25px;
 }
 
 .card {
 	background-color: #60a5fa;
-	width: 350px;
-	height: 415px;
+	width: 300px;
+	height: 300px;
 	border-radius: 30px;
 	color: white;
-	border: 5px solid black;
 }
 
 .card-title {
@@ -283,4 +281,50 @@ a {
 		url(images/recipes.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+/* ANNOUNCEMENTS */
+
+main {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	background-color: #e5e7eb;
+
+	align-items: baseline;
+}
+
+.announcements-container {
+	margin-top: 20px;
+	margin-right: 20px;
+}
+.announcements-title {
+	font-weight: bold;
+	font-size: 1.6rem;
+	margin-bottom: 20px;
+}
+
+.announcement-card {
+	display: grid;
+	gap: 20px;
+	background-color: white;
+	border-radius: 20px;
+	padding: 50px;
+	margin-right: 200px;
+	padding-top: 70px;
+	font-weight: bold;
+	font-size: 1.3rem;
+
+	width: clamp(100px, 100%, 600px);
+}
+.announcement-card > div:not(:last-child):nth-child(even) {
+	border-bottom: 1px solid black;
+}
+
+.announcement-card > div:nth-child(even) {
+	color: grey;
+	font-size: 0.9rem;
+}
+#learnMore {
+	color: #60a5fa;
+	cursor: pointer;
 }
